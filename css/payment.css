@@ -1,0 +1,517 @@
+.payment-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.customer-information-container{
+    /* background-color: green; */
+    width: 765px;
+    height: 100%;
+}
+
+.selected-product-container{
+    background-color: #ededed;
+    width: 40vw;
+    /* height:70vmax; */
+    /* display: flex;
+    justify-content: left; */
+}
+.customer-information{
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    text-align: left;
+    padding: 0 61px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.payment-title h3{
+    margin-bottom: 61px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.payment-info-title{
+    margin-bottom: 13px;
+    font-size: 20px;
+}
+
+.payment-info {
+    margin-bottom: 42px;
+}
+
+.payment-method-title {
+    margin-bottom: 22px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.customer-information .logo{
+    margin-bottom: 42px;
+    margin-top: 10px;
+}
+
+.customer-name {
+    width: 100%;
+}
+
+.payment-info input {
+    height: 59px;
+    padding: 0 14px;
+    margin-bottom: 12px;
+    outline: transparent;
+    border: solid #909090 1px;
+}
+
+.payment-info input ::placeholder{
+    font-size: 16px;
+    color: #909090;
+}
+
+select {
+    height: 59px;
+    width: 206px;
+    padding: 0 14px;
+    background: url("../img/down-icon.png") no-repeat right;
+    -webkit-appearance: none;
+    background-color: #fff;
+    overflow: hidden;
+    outline: transparent;
+}
+
+.payment-method {
+    margin-bottom: 34px;
+}
+
+.payment-method label{
+    font-size: 18px;
+}
+
+.payment-method input{
+    margin-bottom: 16px;
+    margin-right: 23px;
+    width: 19px;
+}
+
+
+.customer-name input{
+    width: 100%;
+}
+
+.customer-email input{
+    width: 381px;
+}
+
+.customer-phone-number input{
+    width: 250px;
+}
+
+.customer-address-detail input{
+    width: 100%;
+}
+
+.customer-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customer-city {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.submit-button {
+    width: 100%;
+}
+
+.submit-button button{
+    width: 100%;
+    height: 61px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    outline: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.back-to-homepage {
+    margin-top: 30px;
+}
+
+.back-to-homepage a{
+    font-size: 20px;
+    text-decoration: none;
+    color: limegreen;
+}
+
+ .selected-product {
+     padding-left: 61px;
+     padding-right: 61px;
+     width: 100%;
+ }
+
+ .selected-product-title {
+     margin-top: 93px;
+     font-weight: 600;
+     font-size: 25px;
+     margin-bottom: 62px;
+ }
+
+ .product-in-cart {
+    width: 100%;
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+ }
+
+ .product-in-cart::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(182, 182, 182);
+    border-radius: 10px;
+  }
+  
+  .product-in-cart::-webkit-scrollbar-thumb {
+    background: #000; 
+    border-radius: 10px;
+  }
+
+ .product-in-cart-grid {
+     display: grid;
+     grid-template-columns: 420px;
+     grid-row-gap: 20px;
+ }
+
+ .grid-item {
+     height: 150px;
+     border-bottom: solid 1px rgba(0, 0, 0, 56%);
+     display: flex;
+ }
+
+ .item-image {
+     width: 118px;
+     height: 150px;
+     background-position: center;
+     background-size: cover;
+ }
+
+ .item-info {
+     width: calc(438px - 118px);
+     height: 100%;  
+     padding: 0 47px 0 27px;
+     position: relative;
+ }
+
+ .item-name{
+     font-size: 20px;
+     font-weight: 600;
+     margin-bottom: 12px;
+ }
+
+ .item-detail{
+    color: #5b5b5b;
+    font-size: 18px;
+    margin-bottom: 12px;
+ }
+
+ .item-quantity-and-price{
+    color: #5b5b5b;
+    font-size: 18px;
+    margin-bottom: 12px;
+ }
+
+ .item-price {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .item-price span{
+     font-size: 11px;
+ }
+
+ .item-quantity-and-price {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .delete-item {
+     width: 17px;
+     height: 20px;
+     background-image: url("../img/delete-icon.png");
+     position: absolute;
+     bottom: 5px;
+     right: 20px;
+ }
+
+ .total-price {
+     width: 100%;
+     height: 64px;
+     background-color: #000;
+     color: #fff;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 34px 0 54px;
+     font-size: 25px;
+     margin-top: 86px;
+ }
+
+ .total-price-price{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ .total-price-price span{
+    font-size: 15px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .payment-container{
+        display: block;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .selected-product-container {
+        width: 100vw;
+        height: 100%;
+        padding: 0;
+    }
+
+    .customer-information{
+        padding: 0 20px;
+    }
+
+    .customer-information h3{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .payment-info-title{
+        font-size: 18px;
+    }
+
+    .customer-information-container{
+        width: 100vw;
+    }
+    
+    .customer-contact {
+        flex-wrap: wrap;
+    }
+
+    .customer-city {
+        flex-wrap: wrap;
+    }
+
+    .customer-contact{
+        width: 100%;
+    }
+    
+    .customer-contact input{
+        width: 100%;
+    }
+
+    .customer-email {
+        width: 100%;
+    }
+
+    .customer-phone-number {
+        width: 100%;
+    }
+
+    .customer-city .city{
+        width: 100%;
+    }
+
+    .customer-city .district {
+        width: 100%;
+    }
+
+    .customer-city .ward {
+        width: 100%;
+    }
+
+    .customer-city select{
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .payment-method-title {
+        font-size: 18px;
+    }
+
+    .payment-method label{
+        font-size: 14px;
+    }
+
+    .selected-product {
+        padding: 20px 20px;
+        margin-top: 36px;
+    }
+
+    .selected-product-title {
+        margin-top: 0;
+        margin-bottom: 24px;
+        font-size: 18px;
+    }
+
+    .product-in-cart-grid {
+        grid-template-columns: 100%;
+    }
+    
+    .item-info{
+        padding: 10px;
+    }
+
+    .item-info .item-name{
+        font-size: 14px;
+    }
+
+    .item-detail {
+        font-size: 12px;
+    }
+
+    .item-quantity-and-price {
+        font-size: 12px;
+    }
+
+    .total-price {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+    .item-image {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .payment-container{
+        display: block;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .selected-product-container {
+        width: 100vw;
+        height: 100%;
+        padding: 0;
+    }
+
+    .customer-information{
+        padding: 0 20px;
+    }
+
+    .customer-information h3{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .payment-info-title{
+        font-size: 18px;
+    }
+
+    .customer-information-container{
+        width: 100vw;
+    }
+    .customer-contact{
+        width: 100%;
+    }
+    
+    .customer-contact input{
+        width: 100%;
+    }
+
+    .customer-email {
+        width: 100%;
+        margin-right: 12px;
+    }
+
+    .customer-phone-number {
+        width: 60%;
+    }
+
+    .customer-city .city{
+        width: 100%;
+    }
+
+    .customer-city .district {
+        width: 100%;
+    }
+
+    .customer-city .ward {
+        width: 100%;
+    }
+
+    .customer-city {
+        display: grid;
+        grid-template-columns: repeat(3,32%);
+        grid-column-gap: 12px;
+    }
+
+    .customer-city select{
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .payment-method-title {
+        font-size: 18px;
+    }
+
+    .payment-method label{
+        font-size: 16px;
+    }
+
+    .selected-product {
+        padding: 20px 20px;
+        margin-top: 36px;
+    }
+
+    .selected-product-title {
+        margin-top: 0;
+        margin-bottom: 24px;
+        font-size: 18px;
+    }
+
+    .product-in-cart-grid {
+        grid-template-columns: 438px;
+    }
+    
+    .item-info{
+        padding: 10px;
+    }
+
+    .item-info .item-name{
+        font-size: 14px;
+    }
+
+    .item-detail {
+        font-size: 12px;
+    }
+
+    .item-quantity-and-price {
+        font-size: 12px;
+    }
+
+    .total-price {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+    .item-image {
+        width: 30%;
+    }
+}

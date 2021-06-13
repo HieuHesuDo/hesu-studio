@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main/main.css" />
+    <link rel="stylesheet" href="css/payment.css" />
+    <title>Thanh toán</title>
+  </head>
+  <body>
+    <div class="payment-container">
+      <div class="customer-information-container">
+        <div class="customer-information">
+          <div class="logo">
+            <img src="./img/HESUSTUDIO.png" alt="" />
+          </div>
+
+          <div class="payment-title">
+            <h3 class="font-2">THÔNG TIN GIAO HÀNG</h3>
+
+            <div class="payment-info">
+              <p class="payment-info-title font-2" style="font-weight: bold">
+                Thông tin khách hàng
+              </p>
+              <div class="customer-name">
+                <input
+                  class="font-2"
+                  type="text"
+                  id="fullname"
+                  name="fullname"
+                  placeholder="Họ và tên"
+                />
+              </div>
+
+              <div class="customer-contact">
+                <div class="customer-email">
+                  <input
+                    class="font-2"
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                  />
+                </div>
+
+                <div class="customer-phone-number">
+                  <input
+                    class="font-2"
+                    type="text"
+                    id="phone"
+                    name="phone"
+                    placeholder="Số điện thoại"
+                  />
+                </div>
+              </div>
+
+              <div class="customer-address-detail">
+                <input
+                  class="font-2"
+                  type="text"
+                  id="address"
+                  name="address"
+                  placeholder="Địa chỉ"
+                />
+              </div>
+
+              <div class="customer-city">
+                <div class="city">
+                  <select class="font-2">
+                    <option value="0">Tỉnh / Thành</option>
+                    <option value="1">Hà Nội</option>
+                    <option value="2">Hồ Chí Minh</option>
+                    <option value="3">Đà Nẵng</option>
+                    <option value="4">Huế</option>
+                    <option value="5">Thanh Hóa</option>
+                    <option value="6">Vinh</option>
+                    <option value="7">Hải Phòng</option>
+                    <option value="8">Lào Cai</option>
+                    <option value="9">Hòa Bình</option>
+                    <option value="10">Nam Định</option>
+                    <option value="11">Hưng Yên</option>
+                    <option value="12">Nghệ An</option>
+                  </select>
+                </div>
+
+                <div class="district">
+                  <select class="font-2">
+                    <option value="0">Quận / Huyện</option>
+                    <option value="1">Ba Đình</option>
+                    <option value="2">Tây Hồ</option>
+                    <option value="3">Đống Đa</option>
+                    <option value="4">Hoàn Kiếm</option>
+                    <option value="5">Thanh Xuân</option>
+                    <option value="6">Hoàng Mai</option>
+                    <option value="7">Hà Đông</option>
+                    <option value="8">Thường Tín</option>
+                    <option value="9">Nam Từ Liêm</option>
+                    <option value="10">Bắc Từ Liêm</option>
+                    <option value="11">Thanh Trì</option>
+                    <option value="12">Thanh Oai</option>
+                  </select>
+                </div>
+
+                <div class="ward">
+                  <select class="font-2">
+                    <option value="0">Phường / Xã</option>
+                    <option value="1">Thanh Xuân Trung</option>
+                    <option value="2">Thanh Xuân Bắc</option>
+                    <option value="3">Thượng Đình</option>
+                    <option value="4">Thanh Xuân Nam</option>
+                    <option value="5">Thanh Xuân</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="payment-method font-2">
+            <p class="payment-method-title font-2">Phương thức thanh toán</p>
+
+            <label
+              ><input
+                type="radio"
+                id="card-pay"
+                name="payment-method"
+                value="1"
+              />
+              Thanh toán thẻ (ATM nội địa, Visa, Matercard)</label
+            ><br /></br>
+
+            <label
+              ><input type="radio" id="cod" name="payment-method" value="2" />
+              Thanh toán khi giao hàng (COD)</label
+            >
+          </div>
+
+          <div class="submit-button font-2">
+            <button>HOÀN TẤT ĐƠN HÀNG</button>
+          </div>
+
+          <div class="back-to-homepage font-2"><a href="./index.html"><< Tiếp tục mua hàng</a></div>
+        </div>
+      </div>
+
+      <div class="selected-product-container">
+        <div class="selected-product">
+          <div class="selected-product-title font-2">
+            SẢN PHẨM ĐÃ CHỌN
+          </div>
+
+          <div class="product-in-cart">
+            <div class="product-in-cart-grid">
+              <div class="grid-item">
+                <div class="item-image" style="background-image: url('./img/Cable-Round-Cardigan.png')"></div>
+                <div class="item-info font-2">
+                  <div class="item-name">
+                    Cable Round Cardigan
+                  </div>
+                  <div class="item-detail">
+                    Màu be / Size L
+                  </div>
+                  <div class="item-quantity-and-price">
+                    <div class="item-quantity">Số lượng: 1</div>
+                    <div class="item-price">420.000<span>đ</span></div>
+                  </div>
+
+                  <div class="delete-item"></div>
+                </div>
+              </div>
+              
+              <div class="grid-item">
+                <div class="item-image" style="background-image: url('./img/House Knit Zipup.png')"></div>
+                <div class="item-info font-2">
+                  <div class="item-name">
+                    House Knit Zipu
+                  </div>
+                  <div class="item-detail">
+                    Màu be / Size L
+                  </div>
+                  <div class="item-quantity-and-price">
+                    <div class="item-quantity">Số lượng: 1</div>
+                    <div class="item-price">520.000<span>đ</span></div>
+                  </div>
+
+                  <div class="delete-item"></div>
+                </div>
+              </div>
+
+              <div class="grid-item">
+                <div class="item-image" style="background-image: url('./img/Mercy Cara Knit.png')"></div>
+                <div class="item-info font-2">
+                  <div class="item-name">
+                    Mercy Cara Knit
+                  </div>
+                  <div class="item-detail">
+                    Màu be / Size L
+                  </div>
+                  <div class="item-quantity-and-price">
+                    <div class="item-quantity">Số lượng: 1</div>
+                    <div class="item-price">350.000<span>đ</span></div>
+                  </div>
+
+                  <div class="delete-item"></div>
+                </div>
+              </div>
+              
+              <div class="grid-item">
+                <div class="item-image" style="background-image: url('./img/Slimfit Down Padding.png')"></div>
+                <div class="item-info font-2">
+                  <div class="item-name">
+                    Slimfit Down Padding
+                  </div>
+                  <div class="item-detail">
+                    Màu be / Size L
+                  </div>
+                  <div class="item-quantity-and-price">
+                    <div class="item-quantity">Số lượng: 1</div>
+                    <div class="item-price">250.000<span>đ</span></div>
+                  </div>
+
+                  <div class="delete-item"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="total-price font-2">
+          <div class="total-price-title">TỔNG TIỀN</div>
+          <div class="total-price-price">1.560.000<span>đ</span></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
